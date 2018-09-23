@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<script>
+
+
+const startGame = prompt("Het is donker en je wordt wakker en je merkt dat je niet meer bent op de plek waar je de vorige dag was wat ga je doen(Type A om te verkennen waar je bent  of type B om nog even rustig aan te doen en een kampvuur maken.");
+
+var start
+var stop
+
+
+if(startGame == 'A'){
+    start = prompt("Je staat op en ziet dat je in een grot bent maar je weet niet of het veilig is om naar buiten te gaanType A om naar buiten te gaan of type B om voor altijd binnen te blijven. ")
+} else if(startGame == 'B'){
+    stop = prompt("Je gaat een kampvuur maken maar je weet niet wat je moet gebruiken je ziet twee stenen liggen Type A voor steen 1 of type B voor steen 2");
+}
+
+
+var vraag1
+var vraag2
+
+if (start == 'A') {
+	vraag1 = prompt("Je loopt naar buiten en schrikt want je ziet een wolf voor je wat doe je?(Type A als je hard wilt wegrennen en type B om te blijven staan) ")
+} else if(start == 'B'){
+    gameOver  = document.write("<h1>Doordat je binnenblijft sterf je door de kou GAMEOVER</h1>")
+}
+ 
+
+var vraag1a
+var vraag1b
+
+if(stop == 'A'){
+  vraag1a = document.write("<h1>Je hebt de verkeerde steen gekozen hierdoor kan je geen vuur maken en vries je dood GAMEOVER</h1>")
+}
+
+   else if (stop == 'B'){
+   vraag1b = prompt("Je hebt de goede steen gepakt, een vuursteen. Nu kan je een kampvuur maken wil je naar buiten gaan om eten te zoeken of blijf je binnen in de grot om daar eten te gaan zoeken Type A om buiten eten te zoeken of type B om in de grot te zoeken.  ")
+
+
+
+   }
+if (vraag1 == 'A') { 
+	vraag2 = prompt('Je rent heel hard weg voor de wolf maar je moet hem proberen weg te lokken wat doe je type A om een steen naar de wolf te gooien of type B om verder te rennen. ')
+} else if (vraag1 == 'B'){
+	gameOver = document.write('<h1> je blijft staan maar daardoor valt de wolf je aan GAMEOVER</h1>')
+}
+
+var vraag3
+var vraag3a
+
+if (vraag2 == 'A') {
+	gameOver = document.write("<h1>Je gooit een steen naar de wolf maar dat doet niks tegen de wolf hierdoor haalt de wolf je in en valt hij je aan GAMEOVER.</h1> ")
+} else if (vraag2 == 'B') {
+	gameOver = document.write("<h1>Je rent verder maar de wolf is veel sneller dus hij valt je aan GAMEOVER</h1> ")
+}
+
+
+var vraag4
+
+if (vraag1b == 'A') {
+	vraag3 = prompt("Je gaat naar buiten om eten te zoeken maar je ziet bananen hoog in de boom hangen maar ook bessen laag op de grond. Type A om de bananen te pakken of type B om de bessen te pakken.")
+} else if (vraag1b == 'B') {
+	 gameOver = document.write("<h1>Je komt in de grot maar je voelt allemaal dingen bij voeten je kijkt en je ziet dat het slangen zijn ze zijn ook giftig je bent dood GAMEOVER</h1>")
+}
+
+var vraag5
+var vraag5a
+
+
+if (vraag3 == 'A') {
+	vraag4 =  prompt ("Je hebt nu eten maar wat wil je nu doen Type A om een uitweg van het eiland te zoeken of type B als je het eiland verder wilt verkennen")
+} else if (vraag3  == 'B') {
+	gameOver = document.write("<h1> Je hebt de bessen gepakt en eet ze op maar opeens merk je dat ze giftig zijn dus je bent dood GAMEOVER</h1>")
+}
+
+var vraag6
+
+if (vraag4 == 'A') {
+	vraag5 = prompt ("Je rent heel lang over het eiland heen en uiteindelijk zie je een lamp branden maar je weet niet of het veilig is om daar heen te gaan type A om naar de lamp te gaan of type B om verder te zoeken naar een uitweg")
+} else if (vraag4  == 'B') {
+	vraag5a = prompt('Je loopt verder op het eiland maar raakt uitgeput en je ziet water type A  om het water te drinken of type B om niet te drinken ')
+}
+
+
+var vraag7
+if (vraag5 == 'A') {
+	vraag6 = prompt ("<h1>Je komt aan bij de lamp en ziet dat het een huisje is bij het huisje ontmoet je iemand en diegene zegt dat dit een eiland is waar helemaal niemand meer woont, hij heeft een boot en hij besluit om je weg te brengen naar het vaste land maar onderweg naar het vaste land is er een storm maar die was allang op het nieuws dus er vliegt al een helicopter maar die helicopter kan nog 1 persoon meenemen dus je moet kiezen wie het overleeft type A als je voor jezelf kiest of type B om ervoor te kiezen om de andere persoon mee te laten gaan.</h1>")
+} else if (vraag5  == 'B') {
+	gameOver = document.write("<h1>Je loopt verder om te zoeken en je ziet een boot en je besluit daar op te gaan maar als je op de boot stapt worden de deuren gesloten en kom je in een cabine die steeds verder gevuld wordt met water dus hierdoor verdrink je GAMEOVER</h1>  ")
+}
+
+var win 
+
+if (vraag6 == 'A') {
+	win = document.write ("<H1>Je bent veilig van het eiland afgekomen gefeliciteerd</h1>")
+} else if (vraag6 == 'B') {
+	gameOver = document.write("<h1> Je bent een aardig mens want je hebt de ander laten overleven maar hierdoor sterf jij helaas GAMEOVER</h1> ")
+}
+
+if (vraag5a == 'A') {
+	win = document.write ("<h1>Je drinkt het water en hierdoor kan je weer doorlopen maar je wilt nog wel van het eiland af komen er ligt een boot en daarmee vaar je weg van het eiland en kom je op het vaste land aan je bent veilig van het eiland afgekomen gefeliciteerd</h1> ")
+} else if (vraag5a  == 'B') {
+	gameOver = document.write("<h1>Je hebt geen water gedronken en hierdoor sterf je GAMEOVER</h1> ")
+}
+</script>
+
+</body>
+</html> 
