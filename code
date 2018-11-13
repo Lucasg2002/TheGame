@@ -4,9 +4,13 @@
 
 
 <script>
+var leeftijd = prompt("Hoe oud ben je")
+var gender = prompt("ben je een jongen of meisje")
+if(leeftijd>15 && gender == 'jongen'){ 
 
+	
 
-const startGame = prompt("Het is donker en je wordt wakker en je merkt dat je niet meer bent op de plek waar je de vorige dag was wat ga je doen(Type A om te verkennen waar je bent  of type B om nog even rustig aan te doen en een kampvuur maken.");
+var startGame = prompt("Het is donker en je wordt wakker en je merkt dat je niet meer bent op de plek waar je de vorige dag was wat ga je doen(Type A om te verkennen waar je bent  of type B om nog even rustig aan te doen en een kampvuur maken.");}
 
 var start
 var stop
@@ -95,7 +99,7 @@ if (vraag5 == 'A') {
 var win 
 
 if (vraag6 == 'A') {
-	win = document.write ("<H1>Je bent veilig van het eiland afgekomen gefeliciteerd</h1>")
+	win = prompt ("Je bent veilig van het eiland afgekomen gefeliciteerd, Maar vond je deze game ook leuk? ja,nee of een beetje")
 } else if (vraag6 == 'B') {
 	gameOver = document.write("<h1> Je bent een aardig mens want je hebt de ander laten overleven maar hierdoor sterf jij helaas GAMEOVER</h1> ")
 }
@@ -105,6 +109,11 @@ if (vraag5a == 'A') {
 } else if (vraag5a  == 'B') {
 	gameOver = document.write("<h1>Je hebt geen water gedronken en hierdoor sterf je GAMEOVER</h1> ")
 }
+
+if (win == 'ja' || 'een beetje')
+	document.write ("<h1> hopelijk heb je ervan genoten </h1>")
+else if (win == 'nee')
+	document.write ("<h1>Jammer dat je het niet leuk vond ik heb wel mijn best gedaan </h1>")
 </script>
 
 </body>
