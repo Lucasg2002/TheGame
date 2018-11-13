@@ -91,7 +91,7 @@ if (vraag4 == 'A') {
 
 var vraag7
 if (vraag5 == 'A') {
-	vraag6 = prompt ("<h1>Je komt aan bij de lamp en ziet dat het een huisje is bij het huisje ontmoet je iemand en diegene zegt dat dit een eiland is waar helemaal niemand meer woont, hij heeft een boot en hij besluit om je weg te brengen naar het vaste land maar onderweg naar het vaste land is er een storm maar die was allang op het nieuws dus er vliegt al een helicopter maar die helicopter kan nog 1 persoon meenemen dus je moet kiezen wie het overleeft type A als je voor jezelf kiest of type B om ervoor te kiezen om de andere persoon mee te laten gaan.</h1>")
+	vraag6 = prompt ("Je komt aan bij de lamp en ziet dat het een huisje is bij het huisje ontmoet je iemand en diegene zegt dat dit een eiland is waar helemaal niemand meer woont, hij heeft een boot en hij besluit om je weg te brengen naar het vaste land maar onderweg naar het vaste land is er een storm maar die was allang op het nieuws dus er vliegt al een helicopter maar die helicopter kan nog 1 persoon meenemen dus je moet kiezen wie het overleeft type A als je voor jezelf kiest of type B om ervoor te kiezen om de andere persoon mee te laten gaan.")
 } else if (vraag5  == 'B') {
 	gameOver = document.write("<h1>Je loopt verder om te zoeken en je ziet een boot en je besluit daar op te gaan maar als je op de boot stapt worden de deuren gesloten en kom je in een cabine die steeds verder gevuld wordt met water dus hierdoor verdrink je GAMEOVER</h1>  ")
 }
